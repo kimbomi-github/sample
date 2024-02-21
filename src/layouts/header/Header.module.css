@@ -1,0 +1,60 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--max-width);
+    height: 56px;
+    line-height: 56px;
+    padding: 0;
+    padding-right: 16px;
+    background-color: #fff;
+    z-index: 10;
+}
+header button {
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    font-size: 0;
+    color: transparent;
+}
+.btn-back {
+    width: 50px;
+    height: 56px;
+    background-image: url('../../assets/header/ico_back.svg');
+    margin-left: 3px;
+}
+.nav-items {
+    float: right;
+}
+.nav-items button {
+    position: relative;
+    width: 40px;
+    height: 56px;
+}
+.nav-items .btn-home {
+    background-image: url('../../assets/header/ico_home.svg');
+}
+.nav-items .btn-search {
+    background-image: url('../../assets/header/ico_search.svg');
+}
+.nav-items .btn-cart {
+    background-image: url('../../assets/header/ico_cart.svg');
+}
+.nav-items .btn-cart span {
+    position: absolute;
+    right: 2px;
+    bottom: 12px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-color: var(--color-black);      
+    font-size: 10px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 50%;
+}

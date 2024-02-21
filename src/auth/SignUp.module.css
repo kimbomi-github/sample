@@ -1,0 +1,215 @@
+.register-form h1 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.36px;
+    padding: 20px;
+}
+.register-form form {
+    padding: 20px;
+}
+.form-group {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.28px;
+    margin-bottom: 8px;
+}
+.form-group input[type='text'] ,
+.form-group input[type='number'] {
+    width: 100%;
+    height: 48px;
+    padding: 16px;
+    border-radius: 8px;
+    border: solid 1px var(--border-gray);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    caret-color: var(--color-green);
+}
+.form-group input::placeholder {
+    color: #d0d6de;
+    font-size: 14px;
+}
+.form-group.is-invalid label {
+    color: var(--color-red);
+}
+
+.form-group.error input[type='text'] ,
+.form-group.error input[type='number'] {
+    border-color: var(--color-red);
+}
+.register-form .noti {
+    display: block;
+    font-family: "Pretendard Variable";
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: var(--light-gray);
+    margin-top: 8px;
+}
+.invalid-feedback,
+.error {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: var(--color-red);
+}
+
+.checkbox-area {
+    padding: 20px 0 25px;
+    position: relative;
+}
+.checkbox-group {
+  padding: 20px 20px 7px 16px;
+  border-radius: 8px;
+  border: solid 1px var(--border-gray);
+  background-color: var(--color-white);
+}
+.checkbox-group div,
+.form-group.form-check {
+    position: relative;
+    margin-bottom: 15px;
+}
+.checkbox-group input,
+.form-group.form-check input {
+    display:none;
+}
+.checkbox-group input + label,
+.form-group.form-check input + label {
+    cursor:pointer;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-black);
+    line-height: 20px; 
+}
+.checkbox-group input[type=checkbox] + label::before,
+.form-group.form-check input[type=checkbox] + label::before {
+    content:"";
+    display:inline-block;
+    vertical-align:middle;
+    width: 20px;
+    height: 20px;
+    margin: -2px 8px 0 0;
+    border-radius: 4px;
+    border: solid 2px var(--border-gray);
+    background-color: var(--color-white);    
+}
+.checkbox-group input[type=checkbox]:checked + label::before,
+.form-group.form-check input[type=checkbox]:checked + label::before {
+    background-color:var(--color-green);
+    border-color:var(--color-green);
+}
+.checkbox-group input[type=checkbox]:checked + label::after,
+.form-group.form-check input[type=checkbox]:checked + label::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 6px;
+    left: 5px;
+    width: 10px;
+    height: 6px;
+    border-left: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
+    -webkit-ransform: rotate(-48deg);
+    transform: rotate(-48deg);
+    border-radius: 0;
+}
+.form-group.form-check.chk-all input + label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.28px;
+    color: var(--color-black);
+    line-height: 24px; 
+}
+.form-group.form-check.chk-all input[type=checkbox] + label::before {
+    width: 24px;
+    height: 24px;
+    margin: -2px 12px 0 0;
+}
+.form-group.form-check.chk-all input[type=checkbox]:checked + label::after {
+    top: 7px;
+    left: 6px;
+    width: 11px;
+    height: 7px;
+}
+/* .form-group.form-check.is-invalid input + label {
+    color: var(--color-red);
+} */
+
+.form-group.error input[type=checkbox] + label::before {
+    border-color: var(--color-red);
+}
+.checkbox-area .noti {
+    margin-left: 29px;
+}
+.form-check a {
+    position: absolute;
+    right: -4px;
+    top: -2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--light-gray);
+    padding: 5px;
+}
+.registrationComplete {
+    position: relative;
+    height: 100vh;
+}
+.registrationComplete__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.gift {
+    display: block;
+    width: 158px;
+    margin: 0 auto 20px;
+}
+.registrationComplete h1 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.44px;
+  line-height: 1.25;
+}
+.registrationComplete p {
+    line-height: 1.3;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+    color: var(--light-gray);
+    margin: 22px auto;
+}
+.registrationComplete button {
+    width: 160px;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 24px;
+    border: solid 1px var(--color-green);
+    background-color: var(--color-light-green);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-green);
+}
+
+.btn-area {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    z-index: 10;
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+}
+div[data-lastpass-icon-root] {
+    display: none;
+}
